@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/* First Image Styles -------------------------------------------------------------------------------------- */
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(-360deg);
+   }
+}
+
+article {
+   display: flex;
+   flex-flow: row wrap;
+   flex: 1 1 auto;
+   line-height: normal;
+   margin: auto;
+}
+
+.parent {
+   position: relative;
+   top: 0;
+   left: 0;
+   max-width: 1000px;
+}
+
+.div1 {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 1000px;
+}
+
+.div2 {
+   position: absolute;
+   top: 48.3%;
+   left: 18.3%;
+   animation: spin 1s linear infinite;
+}
+
+.div3 {
+   position: absolute;
+   top: 47%;
+   left: 67.1%;
+   animation: spin 1s linear infinite;
+}
+
+/* Aside & Div Styles -------------------------------------------------------------------------------------- */
+
+aside {
+   float: right;
+   background: rgba(201, 64, 61, 1);
+   margin: auto;
+   padding-top: 8px;
+   border: solid black;
+}
+
+aside h1 {
+   padding: 10px;
+
+   color: white;
+   text-align: center;
+   font-size: 1.5em;
+}
+
+aside p {
+   color: white;
+}
+
+div.sec h1 {
+   font-size: 3em;
+   padding: 10px;
+   padding-top: 20px;
+   text-align: center;
+}
+
+div.sec p {
+   padding: 10px;
+   padding-top: 20px;
+   text-align: center;
+   font-size: 1.4em;
+   line-height: 1.2;
+}
+
+div.sec img {
+   padding: 10px;
+   padding-top: 20px;
+   max-width: 500px;
+   float: left;
+   border-radius: 20px;
+}
+
+aside p {
+   padding: 10px;
+   padding-bottom: 0px;
+   font-size: 1.4em;
+   text-align: center;
+}
+
+audio {
+   display: flex;
+   padding: 10px;
+   padding-bottom: 20px;
+   background: transparent;
+   flex: 1 1 auto;
+}
+
+article p {
+   font-size: 1.4em;
+   line-height: 1.2;
+   margin: 20px 0px;
+}
+
+a {
+   font-weight: bold;
+   color: rgb(0, 108, 151);
+   text-decoration: none;
+}
+
+a:hover,
+a:active {
+   color: black;
+}
+
+/* ==============================
+Mobile Styles: 0px to 480px
+===============================
+*/
+
+@media only screen and (max-width: 480px) {
+}
+
+/* ================================
+Tablet Styles: 500px and greater
+================================
+*/
+@media only screen and (min-width: 481px) {
+}
+
+/* =================================
+Desktop Styles: 1000px and greater
+=================================
+*/
+
+@media only screen and (min-width: 1000px) {
+}
+
+/* =================================
+Larger Desktop Styles: 1300px and greater
+=================================
+*/
+
+@media only screen and (min-width: 1300px) {
+}

@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+/* Background and img change --------------------------------------------------------------------------------------------- */
+
+@keyframes backgroundChange {
+   0% {
+      background: black;
+   }
+   88.4% {
+      background: black;
+   }
+   89.4% {
+      background: white;
+   }
+   100% {
+      background: white;
+   }
+}
+
+html {
+   animation: backgroundChange 9.7s linear;
+}
+
+body {
+   animation: backgroundChange 9.7s linear;
+}
+
+@keyframes headerAnim {
+   0% {
+      visibility: hidden;
+   }
+   98% {
+      visibility: hidden;
+   }
+   99% {
+      visibility: visible;
+   }
+   100% {
+      visibility: visible;
+   }
+}
+
+div {
+   display: flex;
+   line-height: 0px;
+   align-items: flex-end;
+}
+
+h1 {
+   margin: auto;
+}
+
+h1.title1 {
+   flex: 1 1 auto;
+   animation: headerAnim 10s linear;
+   color: rgb(29, 29, 29);
+   text-align: center;
+   margin: auto;
+   padding: 80px 1em 40px 40px;
+   font-size: 6em;
+   min-width: 1000px;
+}
+
+section {
+   animation: headerAnim 10s linear;
+   margin: auto;
+}
+
+span.colorChange {
+   color: white;
+   background: radial-gradient(circle, rgb(26, 26, 26) 0%, rgb(54, 54, 54) 100%);
+   padding: 10px;
+}
+
+@keyframes videoAnim {
+   0% {
+      transform: scale(200%) translate(0%, 20%);
+   }
+   10% {
+      transform: scale(190%) translate(0%, 18%);
+   }
+   20% {
+      transform: scale(180%) translate(0%, 16%);
+   }
+   30% {
+      transform: scale(170%) translate(0%, 14%);
+   }
+   40% {
+      transform: scale(160%) translate(0%, 12%);
+   }
+   50% {
+      transform: scale(150%) translate(0%, 10%);
+   }
+   60% {
+      transform: scale(140%) translate(0%, 8%);
+   }
+   70% {
+      transform: scale(130%) translate(0%, 6%);
+   }
+   80% {
+      transform: scale(120%) translate(0%, 4%);
+   }
+   90% {
+      transform: scale(110%) translate(0%, 2%);
+   }
+   100% {
+      transform: scale(100%) translate(0%, 0%);
+   }
+}
+
+video {
+   display: flex;
+   flex-flow: row wrap;
+   flex: 1 1 auto;
+   width: 1000px;
+   animation: videoAnim 9.5s linear;
+   scale: 100%;
+   transform: translate(0%, 0%);
+}
+
+p.para {
+   font-size: 1.4em;
+   line-height: 1.2;
+   padding: 10px 20px 10px 20px;
+   text-align: center;
+}
+
+p.paragraph {
+   font-size: 1.4em;
+   line-height: 1.2;
+   padding: 10px 20px 10px 20px;
+   text-align: center;
+}
+
+img {
+   display: flex;
+   flex-flow: row wrap;
+   max-width: 1000px;
+   padding: 10px 20px 10px 20px;
+}
+
+a {
+   font-weight: bold;
+   color: rgb(0, 108, 151);
+   text-decoration: none;
+}
+
+a:hover,
+a:active {
+   color: black;
+}
+
+/* Styles for the Countdown Clock -----------------------------------------------------------------------------------------*/
+
+div#countdown {
+   position: relative;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+   margin: auto;
+   padding: 10px 50px;
+   text-align: center;
+   background: radial-gradient(circle, rgb(26, 26, 26) 0%, rgb(54, 54, 54) 100%);
+   box-shadow: 0px 10px 10px rgba(29, 29, 29, 0.5);
+   margin-bottom: 10px;
+}
+
+div#countdown div {
+   display: block;
+   text-align: center;
+   width: 100%;
+   line-height: 1.2em;
+   font-size: 2em;
+   padding-top: 5px;
+   font-family: segment14, sans-serif;
+   margin: 0px 10px;
+   background: white;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   text-align: center;
+}
+
+div#countdown div span {
+   font-size: 2em;
+}
+
+/* ==============================
+Mobile Styles: 0px to 480px
+===============================
+*/
+
+@media only screen and (max-width: 480px) {
+   h1.title1 {
+      font-size: 3em;
+   }
+}
+
+/* ================================
+Tablet Styles: 500px and greater
+================================
+*/
+@media only screen and (min-width: 481px) {
+   h1.title1 {
+      font-size: 4em;
+   }
+}
+
+/* =================================
+Desktop Styles: 1000px and greater
+=================================
+*/
+
+@media only screen and (min-width: 1000px) {
+   h1.title1 {
+      font-size: 5em;
+   }
+}
+
+/* =================================
+Larger Desktop Styles: 1300px and greater
+=================================
+*/
+
+@media only screen and (min-width: 1300px) {
+}
+
+/* =================================
+Larger Desktop Styles: 1800px and greater
+=================================
+*/
+
+@media only screen and (min-width: 1800px) {
+}

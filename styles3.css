@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+img {
+   max-width: 500px;
+}
+
+/* Cart Table Styles ----------------------------------------------------------------------------------------*/
+
+div {
+   -webkit-flex: 1 1 600px;
+   flex: 1 1 600px;
+}
+
+div table {
+   font-size: 1.4em;
+   border-collapse: collapse;
+}
+
+div table th {
+   vertical-align: top;
+   font-size: 1.5em;
+   line-height: 1.3em;
+   color: rgb(0, 89, 124);
+   background-color: rgb(221, 221, 221);
+}
+
+a {
+   vertical-align: top;
+   font-weight: bold;
+   text-decoration: none;
+   color: rgb(0, 108, 151);
+   text-decoration: none;
+}
+
+a:hover,
+a:active {
+   color: rgb(124, 124, 124);
+}
+
+div table td {
+   vertical-align: top;
+   font-weight: normal;
+   font-size: 1em;
+   line-height: 1.3em;
+   padding: 10px;
+   text-align: center;
+}
+
+/* ==============================
+Mobile Styles: 0px to 480px
+===============================
+*/
+
+@media only screen and (max-width: 480px) {
+   a {
+      align-items: center;
+   }
+
+   div#cart {
+      visibility: hidden;
+      height: 0px;
+   }
+
+   div#cart2 {
+      visibility: visible;
+   }
+}
+
+/* ================================
+Tablet Styles: 481px and greater
+================================
+*/
+@media only screen and (min-width: 481px) {
+   a {
+      align-items: center;
+   }
+
+   div#cart {
+      visibility: hidden;
+      height: 0px;
+   }
+
+   div#cart2 {
+      visibility: visible;
+   }
+}
+
+/* =================================
+Desktop Styles: 1000px and greater
+=================================
+*/
+
+@media only screen and (min-width: 1000px) {
+   div#cart {
+      visibility: visible;
+   }
+
+   div#cart2 {
+      visibility: hidden;
+      height: 0px;
+   }
+}
+
+/* =================================
+Larger Desktop Styles: 1300px and greater
+=================================
+*/
+
+@media only screen and (min-width: 1300px) {
+   div#cart {
+      visibility: visible;
+   }
+
+   div#cart2 {
+      visibility: hidden;
+      height: 0px;
+   }
+}
